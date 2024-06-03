@@ -33,7 +33,5 @@ node_modules
 Thumbs.db
 *.orig
 
-src/pages/BasicList/
-
 # umi
 .umi
