@@ -1,0 +1,11 @@
+src
+config
+public
+tests
+.gitignore
+.npmignore
+.travis.yml
+LICENSE
+README.md
+package.json
+yarn.lock
