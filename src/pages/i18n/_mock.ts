@@ -12,6 +12,14 @@ const sources: I18n.Sources[] = [
           "common.c": "西",
         },
       },
+      {
+        locale: "en_US",
+        content: {
+          "common.a": "A",
+          "common.b": "B",
+          "common.c": "C",
+        },
+      },
     ],
   },
   {
