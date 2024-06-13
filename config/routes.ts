@@ -46,6 +46,21 @@ export default [
     ],
   },
   {
+    name: "i18n",
+    path: "/i18n",
+    icon: "home",
+    routes: [
+      {
+        path: "/i18n/sources",
+        name: "sources",
+        component: "./i18n/sources",
+      },
+      {
+        component: "./404",
+      },
+    ],
+  },
+  {
     path: "/",
     redirect: "/app/clusters",
   },
