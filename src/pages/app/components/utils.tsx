@@ -1,4 +1,4 @@
-import { useIntl, FormattedMessage } from "umi";
+import { FormattedMessage } from "umi";
 import moment from "moment";
 
 export function resolveMessage(message: string) {
