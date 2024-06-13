@@ -3,6 +3,8 @@ export default {
   "menu.app.clusters": "集群列表",
   "menu.app.cluster-details": "集群详情",
   "menu.app.application-details": "应用详情",
+  "menu.i18n": "国际化",
+  "menu.i18n.sources": "国际化文案来源",
   "menu.welcome": "欢迎",
   "menu.more-blocks": "更多区块",
   "menu.home": "首页",

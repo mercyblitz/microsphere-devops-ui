@@ -3,6 +3,8 @@ export default {
   "menu.app.clusters": "Application Clusters",
   "menu.app.cluster-details": "Cluster Details",
   "menu.app.application-details": "Application Details",
+  "menu.i18n": "Internationalization",
+  "menu.i18n.sources": "i18n Sources",
   "menu.welcome": "Welcome",
   "menu.more-blocks": "More Blocks",
   "menu.home": "Home",
