@@ -4,15 +4,28 @@ import { PageContainer } from "@ant-design/pro-layout";
 import { ProFormInstance } from "@ant-design/pro-form";
 
 import { useRequest } from "umi";
-import { Modal, Button, List, Card, Typography, Tooltip } from "antd";
+import {
+  Modal,
+  Button,
+  List,
+  Card,
+  Typography,
+  Tooltip,
+  Space,
+  Tabs,
+} from "antd";
 
 import { PlusOutlined } from "@ant-design/icons";
+
+import { querySources } from "./service";
+
+import type { I18n } from "./data.d";
+
+import SourceCards from "./components/SourceCards";
 
 import { useIntl, FormattedMessage } from "umi";
 
 import styles from "./styles/sources.less";
-
-const { Paragraph } = Typography;
 
 const Sources: React.FC = () => {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
@@ -25,9 +38,23 @@ const Sources: React.FC = () => {
 
   const { formatMessage } = useIntl();
 
-  const routes = [];
+  const [sources, setSources] = useState<I18n.Source[]>([]);
 
-  const content = <div className={styles.pageHeaderContent}></div>;
+  useEffect(() => {
+    const query = async () => {
+      const sources = await querySources();
+      setSources(sources);
+    };
+    query();
+  }, []);
+
+  console.log(sources);
+
+  const content = (
+    <div className={styles.pageHeaderContent}>
+      <SourceCards sources={sources} />
+    </div>
+  );
 
   const extraContent = (
     <div className={styles.extraImg}>
